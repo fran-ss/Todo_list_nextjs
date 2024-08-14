@@ -8,7 +8,6 @@ Este é um projeto de aplicação Todo List usando Next.js e Prisma com um banco
 
 Crie um novo projeto Next.js com o comando abaixo. Responda às perguntas conforme suas preferências:
 
-```bash
 npx create-next-app@latest todo-list
 
 Responda às perguntas conforme suas necessidades:
@@ -23,104 +22,81 @@ Responda às perguntas conforme suas necessidades:
 
 2. Navegar para o Diretório do Projeto
 
-bash
 
-cd todo-list
+-cd todo-list
 
 3. Abrir o Projeto no Editor de Código
 
-bash
 
-code .
+-code .
 
 4. Iniciar o Servidor de Desenvolvimento
 
-bash
 
-npm run dev
+-npm run dev
 
 5. Instalar Prisma CLI
 
 Instale o Prisma como uma dependência de desenvolvimento:
 
-bash
 
-npm install prisma --save-dev
+-npm install prisma --save-dev
 
 6. Inicializar Prisma
 
 Inicialize Prisma no projeto:
 
-bash
-
-npx prisma init
+-npx prisma init
 
 7. Configurar o Banco de Dados com Docker
 
 Inicie um container PostgreSQL usando Docker:
 
-bash
-
-docker run --name postgres -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres
+-docker run --name postgres -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres
 
 8. Conectar ao Banco de Dados e Criar o Banco de Dados
 
 Conecte-se ao PostgreSQL e crie o banco de dados todo:
 
-bash
-
-docker exec -it postgres psql -U postgres
+-docker exec -it postgres psql -U postgres
 
 No prompt do psql, execute os seguintes comandos:
 
-sql
 
-CREATE DATABASE todo;
-\c todo;
+-CREATE DATABASE todo;
+-\c todo;
 
 Verifique as tabelas existentes:
 
-sql
-
-\dt;
+-\dt;
 
 9. Configurar o Schema do Prisma
 
 Edite o arquivo prisma/schema.prisma para definir seus modelos. Após definir o schema, aplique as migrações:
 
-bash
-
-npx prisma migrate dev --name init
+-npx prisma migrate dev --name init
 
 10. Instalar o Prisma Client
 
 Instale o Prisma Client:
 
-bash
-
-npm install @prisma/client
+-npm install @prisma/client
 
 11. Testar a API
 
 Você pode testar a API de tarefas com o comando curl:
 
-bash
-
-curl -X GET http://localhost:3000/api/task
+-curl -X GET http://localhost:3000/api/task
 
 12. Abrir o Prisma Studio
 
 Para abrir o Prisma Studio e gerenciar seu banco de dados visualmente, use:
 
-bash
-
-npx prisma studio
+-npx prisma studio
 
 Comandos Resumidos
 
 Aqui está uma lista rápida dos comandos utilizados no projeto:
-
-bash
 
 npx create-next-app@latest todo-list
 cd todo-list
@@ -141,3 +117,5 @@ npx prisma studio
 Contribuição
 
 Se você deseja contribuir para este projeto, por favor, envie um pull request ou abra um problema para discussão.
+
+
