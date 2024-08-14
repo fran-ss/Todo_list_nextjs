@@ -99,19 +99,33 @@ Comandos Resumidos
 Aqui está uma lista rápida dos comandos utilizados no projeto:
 
 npx create-next-app@latest todo-list
+
 cd todo-list
+
 code .
+
 npm run dev
+
 npm install prisma --save-dev
+
 npx prisma init
+
 docker run --name postgres -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres
+
 docker exec -it postgres psql -U postgres
+
 CREATE DATABASE todo;
+
 \c todo;
+
 \dt;
+
 npx prisma migrate dev --name init
+
 npm install @prisma/client
+
 curl -X GET http://localhost:3000/api/task
+
 npx prisma studio
 
 Contribuição
